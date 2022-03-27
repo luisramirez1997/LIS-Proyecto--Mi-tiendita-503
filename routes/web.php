@@ -29,7 +29,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 	Route::group(['prefix' => 'rol'], function () {
 		Route::get('/', 'RolController@index')->name('rol');
 		Route::get('/create', 'RolController@create')->name('rol.create');
-		Route::post('/create', 'RolController@store')->name('rol.create');
+		Route::post('/create', 'RolController@store')->name('rol.createss');
 		Route::get('/delete/{rol}', 'RolController@destroy')->name('rol.delete');
 		Route::get('/anular/{rol}', 'RolController@anular')->name('rol.anular');
 		Route::get('/activar/{rol}', 'RolController@activar')->name('rol.activar');
